@@ -180,6 +180,10 @@ Praktikum ini memberikan pemahaman mengenai dasar pemrograman menggunakan bahasa
 
 ## Referensi
 
-[1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN.
-<br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
-<br>...
+[1] Triase. (2020). Diktat Edisi Revisi: STRUKTUR DATA. 
+    Medan: Universitas Islam Negeri Sumatera Utara Medan.
+
+[2] Indahyati, Uce., & Rahmawati Yunianita. (2020).
+    Buku Ajar Algoritma dan Pemrograman dalam Bahasa C++.
+    Sidoarjo: Umsida Press.
+    https://doi.org/10.21070/2020/978-623-6833-67-4
