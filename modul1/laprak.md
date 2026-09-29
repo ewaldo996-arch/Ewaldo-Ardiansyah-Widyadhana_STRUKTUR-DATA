@@ -1,6 +1,6 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - Codeblocks IDE & Pengenalan Bahas C++ (Bagian Pertama)</h1>
 
-<p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
+<p align="center">Ewaldo Ardiansyah Widyadhana - 109082500008</p>
 
 ## Dasar Teori
 
@@ -62,7 +62,7 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 1_1](https://github.com/ewaldo996-arch/Ewaldo-Ardiansyah-Widyadhana_STRUKTUR-DATA/tree/main/modul1/output_guide1.png)
+![Screenshot Output Unguided 1_1](https://github.com/ewaldo996-arch/Ewaldo-Ardiansyah-Widyadhana_STRUKTUR-DATA/tree/main/modul1/STRUKTUR-DATA/output_guide1.png)
 
 contoh :
 ![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
