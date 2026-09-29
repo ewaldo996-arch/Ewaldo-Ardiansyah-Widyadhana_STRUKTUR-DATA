@@ -122,7 +122,8 @@ int main() {
 
 ##### Output 2
 
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_2](https://github.com/ewaldo996-arch/Ewaldo-Ardiansyah-Widyadhana_STRUKTUR-DATA/tree/main/modul1/output_ss/output_guide2.png)
+
 
 penjelasan unguided 2
 
@@ -166,6 +167,8 @@ int main() {
 ```
 
 ### Output Unguided 3 :
+
+![Screenshot Output Unguided 3_3](https://github.com/ewaldo996-arch/Ewaldo-Ardiansyah-Widyadhana_STRUKTUR-DATA/tree/main/modul1/output_ss/output_guide3.png)
 
 penjelasan unguided 3
 
