@@ -64,7 +64,7 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 1_1](../output_ss/output_guide1.png)
+![Screenshot Output Unguided 1_1](https://github.com/ewaldo996-arch/Ewaldo-Ardiansyah-Widyadhana_STRUKTUR-DATA/modul1/output_guide1.png)
 
 penjelasan unguided 1
 
