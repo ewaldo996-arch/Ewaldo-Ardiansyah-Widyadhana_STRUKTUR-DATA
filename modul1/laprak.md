@@ -33,6 +33,7 @@ Percabangan digunakan untuk menentukan perintah yang akan dijalankan berdasarkan
 
 ### 1. (isi dengan soal unguided 1)
 
+```C++
 #include <iostream>
 using namespace std;
 
@@ -57,6 +58,7 @@ int main() {
 
     return 0;
 }
+```
 
 ### Output Unguided 1 :
 
@@ -64,29 +66,59 @@ int main() {
 
 ![Screenshot Output Unguided 1_1](https://github.com/ewaldo996-arch/Ewaldo-Ardiansyah-Widyadhana_STRUKTUR-DATA/tree/main/STRUKTUR_DATA/modul1/output_ss/output_guide1.png)
 
-contoh :
-![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
-
-##### Output 2
-
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
 penjelasan unguided 1
+
+Program pertama dibuat untuk menerima input berupa dua buah bilangan bertipe float. Kedua bilangan tersebut kemudian digunakan untuk melakukan empat operasi aritmatika, yaitu penjumlahan, pengurangan, perkalian, dan pembagian. Program menggunakan cin untuk menerima input dari pengguna dan cout untuk menampilkan hasil operasi. Pada operasi pembagian diberikan pengecekan agar pembagian dengan angka nol tidak dilakukan. Dengan program ini, pengguna dapat mengetahui hasil dari beberapa operasi aritmatika berdasarkan dua bilangan yang dimasukkan.
 
 ### 2. (isi dengan soal unguided 2)
 
 ```C++
-source code unguided 2
+#include <iostream>
+using namespace std;
+
+int main() {
+    int angka;
+
+    cout << "Masukkan angka (0-100): ";
+    cin >> angka;
+
+    string satuan[] = {
+        "nol", "satu", "dua", "tiga", "empat",
+        "lima", "enam", "tujuh", "delapan",
+        "sembilan", "sepuluh", "sebelas"
+    };
+
+    if (angka >= 0 && angka <= 11) {
+        cout << satuan[angka] << endl;
+    }
+    else if (angka < 20) {
+        cout << satuan[angka - 10] << " belas" << endl;
+    }
+    else if (angka < 100) {
+        int puluhan = angka / 10;
+        int satuanAngka = angka % 10;
+
+        cout << satuan[puluhan] << " puluh";
+
+        if (satuanAngka != 0) {
+            cout << " " << satuan[satuanAngka];
+        }
+
+        cout << endl;
+    }
+    else if (angka == 100) {
+        cout << "seratus" << endl;
+    }
+    else {
+        cout << "Angka harus 0 sampai 100" << endl;
+    }
+
+    return 0;
+}
 ```
 
 ### Output Unguided 2 :
 
-##### Output 1
-
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
 
 ##### Output 2
 
@@ -94,26 +126,50 @@ contoh :
 
 penjelasan unguided 2
 
+Program kedua dibuat untuk menerima input berupa bilangan bulat dari 0 sampai 100 dan mengubah bilangan tersebut menjadi bentuk tulisan dalam bahasa Indonesia. Program menggunakan array bertipe string untuk menyimpan nama-nama bilangan dari nol sampai sebelas. Selanjutnya, percabangan if, else if, dan else digunakan untuk menentukan bentuk tulisan berdasarkan nilai angka yang dimasukkan. Untuk angka puluhan, program memisahkan nilai puluhan dan satuan menggunakan operasi pembagian dan modulus. Dengan demikian, angka seperti 79 dapat ditampilkan menjadi "tujuh puluh sembilan", sedangkan angka 100 ditampilkan sebagai "seratus".
+
 ### 3. (isi dengan soal unguided 3)
 
 ```C++
-source code unguided 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    for (int i = n; i >= 1; i--) {
+
+        
+        for (int s = n; s > i; s--) {
+            cout << "  ";
+        }
+
+        
+        for (int j = i; j >= 1; j--) {
+            cout << j << " ";
+        }
+
+        
+        cout << "*";
+
+        
+        for (int j = 1; j <= i; j++) {
+            cout << " " << j;
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
 ```
 
 ### Output Unguided 3 :
 
-##### Output 1
-
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
-
-##### Output 2
-
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
 penjelasan unguided 3
+
+Program ketiga digunakan untuk membuat pola berbentuk segitiga terbalik berdasarkan angka yang dimasukkan oleh pengguna. Program menggunakan perulangan for untuk mengatur jumlah baris, spasi, dan angka yang ditampilkan. Pada setiap baris, jumlah angka semakin sedikit sehingga pola membentuk segitiga terbalik. Tanda * diletakkan di bagian tengah setiap baris sebagai pemisah antara angka bagian kiri dan kanan. Spasi pada awal baris juga digunakan agar posisi pola semakin ke tengah pada baris berikutnya. Jika input yang diberikan adalah 3, maka pola yang dihasilkan adalah tiga baris angka dan satu baris terakhir yang hanya berisi tanda
 
 ## Kesimpulan
 
@@ -124,6 +180,3 @@ Praktikum ini memberikan pemahaman mengenai dasar pemrograman menggunakan bahasa
 [1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN.
 <br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
 <br>...
-
-
-[def]: https://github.com/ewaldo996-arch/Ewaldo-Ardiansyah-Widyadhana_STRUKTUR-DATA/tree/main/modul1/output_ss/output_guide1.png
