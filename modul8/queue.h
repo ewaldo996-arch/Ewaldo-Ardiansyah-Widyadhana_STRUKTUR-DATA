@@ -2,18 +2,14 @@
 #define QUEUE_H
 
 #include <iostream>
-#include <string>
 using namespace std;
 
-struct Node
-{
-    string nama;
-    Node *next;
-};
+const int MAKSIMAL = 5;
 
-struct queue
-{
-    Node *head, *tail;
+struct queue {
+    string nama[MAKSIMAL];
+    int head;
+    int tail;
 };
 
 void CreateQueue(queue &Q);
@@ -25,5 +21,3 @@ void viewQueue(queue Q);
 void clearQueue(queue &Q);
 
 #endif
-
-
