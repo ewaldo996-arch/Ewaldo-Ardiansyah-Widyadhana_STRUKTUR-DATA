@@ -1,34 +1,35 @@
-#include "queue.h"
+
 #include <iostream>
+#include "queue.h"
 
 using namespace std;
 
-int main(){
-    queue Q;
+int main() {
+    Queue Q;
+    createQueue(Q);
 
-    CreateQueue(Q);
-    enQueue(Q, "Dimas");
-    enQueue(Q, "Arvin");
-    enQueue(Q, "Rizal");
-    enQueue(Q, "Hafizh");
-    enQueue(Q, "Fathur");
-    enQueue(Q, "Daffa");
-    cout << endl;
+    cout << "=== CIRCULAR QUEUE ===" << endl;
+    cout << "H - T | Queue Info" << endl;
 
-    cout << "--- Isi Queue Setelah enQueue ---" << endl;
-    viewQueue(Q);
-    cout << endl;
+    enqueue(Q, 5);
+    enqueue(Q, 2);
+    enqueue(Q, 7);
+    enqueue(Q, 4);
+    enqueue(Q, 8);
 
-    deQueue(Q);
-    deQueue(Q);
-    deQueue(Q);
-    deQueue(Q);
-    // deQueue(Q);
-    // deQueue(Q);
-    cout << endl;
+    printInfo(Q);
 
-    cout << "--- Isi Queue Setelah deQueue ---" << endl;
-    viewQueue(Q);
+    cout << "\nDequeue dua kali:" << endl;
+    dequeue(Q);
+    dequeue(Q);
+    printInfo(Q);
+
+    cout << "\nEnqueue 10 dan 20:" << endl;
+    enqueue(Q, 10);
+    printInfo(Q);
+
+    enqueue(Q, 20);
+    printInfo(Q);
 
     return 0;
 }

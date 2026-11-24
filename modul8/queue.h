@@ -1,23 +1,23 @@
+
 #ifndef QUEUE_H
 #define QUEUE_H
 
 #include <iostream>
 using namespace std;
 
-const int MAKSIMAL = 5;
+typedef int infotype;
 
-struct queue {
-    string nama[MAKSIMAL];
+struct Queue {
+    infotype info[5];
     int head;
     int tail;
 };
 
-void CreateQueue(queue &Q);
-bool isEmpty(queue Q);
-bool isFull(queue Q);
-void enQueue(queue &Q, const string &nama);
-void deQueue(queue &Q);
-void viewQueue(queue Q);
-void clearQueue(queue &Q);
+void createQueue(Queue &Q);
+bool isEmptyQueue(Queue Q);
+bool isFullQueue(Queue Q);
+void enqueue(Queue &Q, infotype x);
+infotype dequeue(Queue &Q);
+void printInfo(Queue Q);
 
 #endif
